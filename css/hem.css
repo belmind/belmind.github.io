@@ -38,6 +38,7 @@ header{
 	background-size:cover;
 	background-position: center center;
 }
+
 .kicker{
 font-family: 'Open Sans', sans-serif;
 text-align:center;
@@ -116,7 +117,6 @@ h3{
   font-size:20px;
   margin-top:50px;
   margin-bottom: 5px;
-
 }
 
 
@@ -128,13 +128,11 @@ h3{
 	font-weight: 300;
 	font-size:12px;
 	margin-top:0px;
-
 }
 
 .button img{
 	position: relative;
 	top:7px;
-
 }
 
 .button1 img{
@@ -345,7 +343,6 @@ padding-right:50px;
   font-size:20px;
   margin-top:50px;
   margin-bottom: 35px;
-
 }
 
 .box_iphone{
@@ -628,6 +625,7 @@ footer{
 	text-transform: uppercase;
 	color:#666;
 }
+
 .copyright a:hover{
 	color:white;
 }
