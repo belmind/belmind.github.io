@@ -1,1 +1,0 @@
-# belmind.github.io
