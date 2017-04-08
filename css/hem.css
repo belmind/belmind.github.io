@@ -634,7 +634,7 @@ footer{
 	overflow:hidden;
   position:absolute;
   left:50%;
-  top:89.5%;
+	bottom:2em;
   width:24px;
   margin: -12px;
   height:50px;
