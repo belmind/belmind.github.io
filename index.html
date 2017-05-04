@@ -2,354 +2,254 @@
 <head>
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Muli:300|Raleway:300,700' rel='stylesheet' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<link rel="shortcut icon" href="img/X.png">
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel="shortcut icon" href="img/icon1.png">
 <link href="css/hem.css" rel="stylesheet" type="text/css">
 <link href="css/animate.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="animate.min.css">
-<title> OS X Setups  </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<title> dervisevic | Göteborg, Sverige  </title>
 <meta charset="utf-8">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="js/noframework.waypoints.min.js"></script>
 <script src="js/waypoints"></script>
 <script src="js/jquery.waypoints.min.js"></script>
 <script type="text/javascript" src="js/instafeed.min.js"></script>
 
-<!-- Scroll animations -->
+</head>
+<body>
+  <!-- Scrolling animation # -->
+  <script type ="text/javascript">
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1300);
+          return false;
+        }
+      }
+    });
+  });
+  </script>
+
+
+  <!-- Scroll animations -->
 <script>
 $(document).ready(function(){
 
   // hide our element on page load
-  $('#element-to-animate-header').css('opacity', 0);
+  $('#element-to-animate-port1').css('opacity', 0);
 
-  $('#element-to-animate-header').waypoint(function() {
-      $('#element-to-animate-header').addClass('fadeInUp');
+  $('#element-to-animate-port1').waypoint(function() {
+      $('#element-to-animate-port1').addClass('fadeInUp');
   }, { offset: '80%' });
 
   // hide our element on page load
-  $('#element-to-animate-row11').css('opacity', 0);
+  $('#element-to-animate-port2').css('opacity', 0);
 
-  $('#element-to-animate-row11').waypoint(function() {
-      $('#element-to-animate-row11').addClass('fadeInUp');
+  $('#element-to-animate-port2').waypoint(function() {
+      $('#element-to-animate-port2').addClass('fadeInUp');
   }, { offset: '80%' });
 
   // hide our element on page load
-  $('#element-to-animate-row12').css('opacity', 0);
+  $('#element-to-animate-port3').css('opacity', 0);
 
-  $('#element-to-animate-row12').waypoint(function() {
-      $('#element-to-animate-row12').addClass('fadeInUp');
-  }, { offset: '80%' });
-
-  // hide our element on page load
-  $('#element-to-animate-row21').css('opacity', 0);
-
-  $('#element-to-animate-row21').waypoint(function() {
-      $('#element-to-animate-row21').addClass('fadeInUp');
-  }, { offset: '80%' });
-
-  // hide our element on page load
-  $('#element-to-animate-row22').css('opacity', 0);
-
-  $('#element-to-animate-row22').waypoint(function() {
-      $('#element-to-animate-row22').addClass('fadeInUp');
-  }, { offset: '80%' });
-
-  // hide our element on page load
-  $('#element-to-animate2').css('opacity', 0);
-
-  $('#element-to-animate2').waypoint(function() {
-      $('#element-to-animate2').addClass('fadeInUp');
-  }, { offset: '60%' });
-
-  // hide our element on page load
-  $('#element-to-animate3').css('opacity', 0);
-
-  $('#element-to-animate3').waypoint(function() {
-      $('#element-to-animate3').addClass('fadeInUp');
-  }, { offset: '60%' });
-
-  // hide our element on page load
-  $('#element-to-animate4').css('opacity', 0);
-
-  $('#element-to-animate4').waypoint(function() {
-      $('#element-to-animate4').addClass('fadeInUp');
-  }, { offset: '60%' });
-
-  // hide our element on page load
-  $('#element-to-animatep').css('opacity', 0);
-
-  $('#element-to-animatep').waypoint(function() {
-      $('#element-to-animatep').addClass('fadeInLeft');
-  }, { offset: '65%' });
-
-  // hide our element on page load
-  $('#element-to-animate-team').css('opacity', 0);
-
-  $('#element-to-animate-team').waypoint(function() {
-      $('#element-to-animate-team').addClass('fadeInUp');
-  }, { offset: '80%' });
-
-  // hide our element on page load
-  $('#element-to-animate-person1').css('opacity', 0);
-
-  $('#element-to-animate-person1').waypoint(function() {
-      $('#element-to-animate-person1').addClass('fadeInLeft');
-  }, { offset: '80%' });
-
-  // hide our element on page load
-  $('#element-to-animate-person2').css('opacity', 0);
-
-  $('#element-to-animate-person2').waypoint(function() {
-      $('#element-to-animate-person2').addClass('fadeInUp');
-  }, { offset: '80%' });
-
-  // hide our element on page load
-  $('#element-to-animate-person3').css('opacity', 0);
-
-  $('#element-to-animate-person3').waypoint(function() {
-      $('#element-to-animate-person3').addClass('fadeInRight');
+  $('#element-to-animate-port3').waypoint(function() {
+      $('#element-to-animate-port3').addClass('fadeInUp');
   }, { offset: '80%' });
 
 });
 </script>
 
-<!-- Instagram live feed -->
-<script type="text/javascript">
-    var feed = new Instafeed({
-        get: "tagged",
-        tagName: "osxsetups",
-        resolution: 'standard_resolution',
-
-      	limit: "12",
-        clientId: "4efbdb01223946d78e40e7ab3a9571e3",
-        accessToken: "3280472260.4efbdb0.be398626f5e44baf8902358a35eefab8",
-         });
-    feed.run();
-</script>
-</head>
-
-<!-- Scrolling animation # -->
-<script type ="text/javascript">
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 5000);
-        return false;
-      }
-    }
-  });
-});
-</script>
-
-<body>
-	<header>
-
-		<nav>
-			<ul>
-					<li> <a href="#about">ABOUT US</a></li>
-					<li> <a href="#platforms">PLATFORMS</a></li>
-          <li> <a href="#instagram">INSTAGRAM</a></li>
-          <li> <a href="#team">THE TEAM</a></li>
-					<li> <a href="#contact">CONTACT</a></li>
-			</ul>
-	</nav>
-
-		<h1><span> OS X Setups </span></h1>
-		<div class="kicker"> Technology // Design // Inspiration </div> <!-- Slut på kicker -->
-      <div class="mouse"></div>
-	</header>
-  <div class="about_x">
-   <div class="about_container">
-      <div id="element-to-animate-header" class="about_top animated">
-         <h2><a name="about"> What is OS X Setups? </a></h2>
-         <p class=" "> OS X Setups was once founded to share awesome workspace setups on Instagram.<br>
-            Inspired by the many beautiful workspaces from the Instagram community it was time to <br>
-             create a page and put all these setups in one place. </p>
-      </div>
-
-      <div id="element-to-animate-row11" class="about_left animated">
-         <h3> Get Inspired </h3>
-           <p class="drop-cap">The main focus is layed on inspiring the Instagram community on how to create a setup they love to work with.
-            This usually happens through reposting awesome workspaces at the Instagram page. It's important to us that the original creator
-            is always linked and credit is given. </p>
-            <div class="mobile_fix">
-            <a class="button" target="new" href="http://www.instagram.com/osxsetups"> Get inspired
-              <!-- Instagram icon by Icons8 -->
-                <img src="img/ig.png" width="30  " height="30"> </a>
-              </div> <!-- mobile -->
-      </div>
-
-      <div id="element-to-animate-row12" class="about_right animated ">
-         <h3> Advertise with us </h3>
-         <p class="drop-cap"> As many people know there are many sponsored posts on Instagram these days. This makes it possible for companies to build their brand on this platform.
-            We offer this as long as we agree with the brand/ the product. That means we will not promote trash or something that has nothing to do with this page.
-            If you are interested in a deal, feel free to contact osxsetups@gmail.com. Basically we can offer you 2 ways to promote a product or your brand. </p>
-      </div>
 
 
-      <div id="element-to-animate-row21" class="about_left animated">
-            <h3> Giveaways </h3>
-            <p class="drop-cap"> 4 giveaways until now which all went great. The manufacturers offer a certain product that will be gifted to the winner of a giveaway.
-                Usually a giveaway goes on one week and the conditions of participation are liking and commenting the giveaway post which shows your product in an aesthetic environment.  </p>
-             <p class="drop-cap1"> After the winner is determined by an application made for Instagram giveaways, we are going to contact the winner via Direct Message and look for his address.
-                This address will be forwarded to the manufacturer so he can send out the product to the lucky winner. </p>
-      </div>
+<div class="container">
+  <div class=top>
+  <div class="social_container animated fadeIn">
 
+  <a target="_new" href="http://www.github.com/belmind">
+    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  	 width="438.549px" height="438.549px" viewBox="0 0 438.549 438.549" style="enable-background:new 0 0 438.549 438.549;"
+  	 xml:space="preserve">
+  <g>
+  	<path d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
+  		c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63
+  		c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996
+  		c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136
+  		c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559
+  		c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559
+  		c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997
+  		c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851
+  		c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136
+  		c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41
+  		c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126
+  		c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817
+  		c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994
+  		c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849
+  		c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24
+  		c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979
+  		c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146
+  		c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995
+  		c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906
+  		C438.536,184.851,428.728,148.168,409.132,114.573z"/>
+  </g><g></g><g></g><g>
+  </g><g></g><g></g><g></g><g></g><g></g>
+  <g></g><g></g><g></g><g></g><g>
+  </g><g></g><g></g>
+</svg> </a>
 
-      <div id="element-to-animate-row22" class="about_right animated ">
-         <h3>Sponsored Posts </h3>
-         <p class="drop-cap"> Sponsored Posts are a good way to promote a certain product. It's important that we will not post plain product pictures or something like this.
-            What we need is a workspace including your product. So this way of promoting a product is product placement. </p>
+  <a target="_new" href="http://www.instagram.com/derviseviic">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  	 width="800px" height="800px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
+  <g>
+  	<defs>
+  		<rect id="SVGID_1_" width="800" height="800"/>
+  	</defs>
+  	<clipPath id="SVGID_2_">
+  		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+  	</clipPath>
+  	<path clip-path="url(#SVGID_2_)" d="M400.003,72.068c106.804,0,119.451,0.408,161.633,2.332
+  		c38.997,1.781,60.178,8.298,74.274,13.774c18.673,7.257,31.996,15.926,45.993,29.923c13.999,13.997,22.669,27.317,29.923,45.99
+  		c5.477,14.097,11.993,35.277,13.771,74.275c1.924,42.181,2.332,54.829,2.332,161.636s-0.408,119.457-2.332,161.636
+  		c-1.778,39-8.295,60.181-13.771,74.274c-7.254,18.669-15.924,31.993-29.923,45.993c-13.997,13.996-27.32,22.666-45.993,29.923
+  		c-14.097,5.476-35.277,11.993-74.274,13.771c-42.175,1.927-54.82,2.331-161.633,2.331c-106.815,0-119.46-0.404-161.636-2.331
+  		c-38.997-1.778-60.178-8.296-74.275-13.771c-18.669-7.257-31.996-15.927-45.993-29.923c-13.996-14-22.663-27.324-29.92-45.993
+  		c-5.476-14.094-11.996-35.274-13.774-74.274c-1.924-42.179-2.332-54.829-2.332-161.636s0.408-119.455,2.332-161.636
+  		c1.778-38.998,8.298-60.178,13.774-74.275c7.257-18.672,15.924-31.993,29.92-45.99c13.997-13.997,27.324-22.666,45.993-29.923
+  		c14.097-5.476,35.278-11.994,74.275-13.774C280.549,72.476,293.196,72.068,400.003,72.068 M400.003-0.003
+  		c-108.636,0-122.258,0.459-164.92,2.408c-42.577,1.942-71.654,8.706-97.096,18.593C111.683,31.22,89.376,44.896,67.14,67.133
+  		C44.903,89.37,31.223,111.68,21.004,137.98C11.111,163.429,4.35,192.502,2.408,235.08c-1.948,42.666-2.405,56.285-2.405,164.917
+  		c0,108.636,0.457,122.255,2.405,164.917c1.942,42.58,8.703,71.654,18.596,97.1c10.219,26.303,23.899,48.61,46.136,70.85
+  		c22.236,22.237,44.543,35.914,70.847,46.136c25.442,9.887,54.519,16.647,97.096,18.593c42.663,1.945,56.285,2.408,164.92,2.408
+  		c108.633,0,122.255-0.463,164.917-2.408c42.578-1.945,71.654-8.706,97.097-18.593c26.304-10.222,48.61-23.898,70.851-46.136
+  		c22.236-22.239,35.913-44.547,46.135-70.85c9.891-25.445,16.651-54.52,18.594-97.1c1.947-42.662,2.404-56.281,2.404-164.917
+  		c0-108.633-0.457-122.252-2.404-164.917c-1.942-42.577-8.703-71.651-18.594-97.099c-10.222-26.3-23.898-48.61-46.135-70.847
+  		c-22.24-22.237-44.547-35.914-70.851-46.135c-25.442-9.887-54.519-16.651-97.097-18.593C522.258,0.457,508.636-0.003,400.003-0.003
+  		"/>
+  	<path clip-path="url(#SVGID_2_)" d="M400.003,194.594c-113.442,0-205.406,91.961-205.406,205.403S286.561,605.4,400.003,605.4
+  		c113.439,0,205.403-91.961,205.403-205.403S513.442,194.594,400.003,194.594 M400.003,533.329
+  		c-73.639,0-133.335-59.693-133.335-133.332s59.696-133.333,133.335-133.333s133.332,59.694,133.332,133.333
+  		S473.642,533.329,400.003,533.329"/>
+  	<path clip-path="url(#SVGID_2_)" d="M661.523,186.479c0,26.507-21.488,47.998-48.002,47.998c-26.508,0-47.998-21.491-47.998-47.998
+  		c0-26.514,21.49-48.002,47.998-48.002C640.035,138.477,661.523,159.965,661.523,186.479"/>
+  </g>
+</svg> </a>
 
-         <p class="drop-cap1"> First you have to contact us via email and make sure to give us enough information about your product and the post.
-            After we understood what you want to promote, we gonna offer you a certain price which totally depends on the product you are promoting. </p>
-            <div class="mobile_fix1">
-          <a class="button1" target="new" href="http://www.hotmail.com"> Contact us now <!-- Message Filled icon by Icons8 -->
-           <img src="img/msg.png" width="30" height="30"> </a>
-         </div> <!-- mobile_fix1 -->
-       </div>
-   </div> <!-- about_container -->
-   </div> <!-- About_X -->
+  <a target="_new" href="http://www.facebook.com/D.Belmin">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+  <g>
+  	<path fill="" d="M223.22,71.227c16.066-15.298,38.918-20.465,60.475-21.109c22.799-0.205,45.589-0.081,68.388-0.072
+  		c0.09,24.051,0.098,48.111-0.009,72.161c-14.734-0.026-29.478,0.036-44.212-0.026c-9.343-0.582-18.937,6.5-20.635,15.762
+  		c-0.224,16.093-0.081,32.195-0.072,48.289c21.61,0.089,43.22-0.027,64.829,0.054c-1.582,23.281-4.47,46.456-7.858,69.541
+  		c-19.088,0.179-38.187-0.018-57.274,0.099c-0.17,68.665,0.089,137.33-0.134,205.995c-28.352,0.116-56.721-0.054-85.072,0.08
+  		c-0.537-68.674,0.044-137.383-0.295-206.066c-13.832-0.144-27.672,0.099-41.503-0.116c0.053-23.085,0.018-46.169,0.026-69.246
+  		c13.822-0.169,27.654,0.036,41.477-0.098c0.42-22.442-0.421-44.91,0.438-67.333C203.175,101.384,209.943,83.493,223.22,71.227z"/>
+  </g>
+  </svg> </a>
 
-   <div class="split"></div>
+  <a target="_new" href="https://www.linkedin.com/in/belmin-dervisevic-848a39139/">
+    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  	 width="430.117px" height="430.117px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;"
+  	 xml:space="preserve">
+  <g>
+  	<path id="LinkedIn" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+  		c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+  		v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+  		C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+  		c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+  		 M5.477,420.56h92.184v-277.32H5.477V420.56z"/>
+  </g><g></g><g>
+  </g><g></g><g></g><g></g><g></g><g></g><g></g>
+  <g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+</svg> </a>
 
-   <div class="specs">
-      <div id="element-to-animatep" class="box_iphone animated">
-      <img src="img/iphoneosx1.png">
-   </div> <!-- box_iphone -->
-   <div id="element-to-animate2" class="iphone_info animated">
-      <h3><a name="platforms"> Instagram, the platform we all love!</a></h3>
-      <p>  Maecenas ultrices ipsum sit amet ornare tincidunt. Quisque rhoncus mi ac nisl lobortis facilisis. Vivamus quam dolor, luctus ut tortor vitae, volutpat mollis sem.
-           Pellentesque condimentum massa ultrices, elementum ipsum in, tincidunt ligula. Morbi sapien ipsum, tempus eu sem at, aliquet congue ipsum.
-           Proin viverra condimentum elit, ac egestas arcu hendrerit nec. Vestibulum venenatis arcu quis euismod malesuada. Nunc id lectus elit.
-           Donec vitae nulla fringilla quam tristique malesuada. </p>
+  </div> <!-- social_container -->
 
-          <div class="devices">
-          <div class="dev_box">
-          <img src="img/ip.png">
-          </div>
-             <img src="img/imc.png" style="position: relative; top: -120px; left: 80px;">
-             <img src="img/mb.png" style="position: relative; top: -105px; left: 90px;">
-             <img src="img/watch.png" style="width:100px; height: 100px; position: relative; top: -130px; left: 80px;">
-           </div>
-   </div> <!-- Iphone_info -->
-</div> <!-- specs -->
+  <div class="language animated fadeIn">
+    <p> Svenska </p>
+    <img src="img/sv.svg" alt="sweden"></img>
+  </div> <!-- language -->
+</div> <!-- top -->
 
-<div class="split"></div>
-	<div class="IG">
-  <div id="element-to-animate3" class="wrapperIG animated">
-	<h3> <a name="instagram" onclick="$('[jquery selector]').animatescroll([options]);"> Live Feed</a> </h3>
-	<h6> Don't forget to follow OS X Setups on Instagram! </h6>
-	<hr></hr>
+  <header>
+  <div class="logo_wrapper animated fadeIn">
+  <img src="img/logoitalic.svg" alt="dervisevic"> </img>
 
-    <div id="instafeed">
+  </div>
+  </header>
+
+  <div class="about_me">
+  <div class="me_pic">
+    <div class="pic_pos animated fadeIn">
+  <img src="img/me3.jpeg">
+  </div> </div>
+  <div class="me_text animated fadeIn">
+    <div class="text_pos">
+  <p> Hej! Jag heter Belmin, är 20 år gammal och kommer ifrån Sollefteå, Norrland. Idag är jag bosatt i Göteborg och studerar Datateknik, Civilingenjör vid Chalmers tekniska högskola. <br>
+      När jag inte tränar, pluggar eller umgås med familj och vänner så brukar jag designa samt utveckla hemsidor och mobila plattformar. Jag anser att bra design är estetisk, tydlig och diskret. <br>
+      Denna sida är långt ifrån klar och kommer nog aldrig bli det heller, men den får duga tillsvidare.<br>
+      Tveka inte att kontaka mig då ifall du skulle vilja diskutera idéer eller bara säga hej.</p>
+      <div class="text_lower">
+      <a href="#TP">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+     <g><path d="M10,292l488.8,489l1.1-1.2l1.2,1.2L990,292l-73-73L500,636L83,219L10,292z"/></g> </svg>  Se tidigare projekt</a> </div> <!-- text_lower -->
     </div>
-    </div> <!-- WrapperIG -->
-  </div> <!-- IG -->
+   </div> <!-- me_text -->
 
-  <div class="split"></div>
-    <div class="team">
-      <div class="team-wrapper">
-        <div id="element-to-animate-team" class="teamanimation animated">
-        <h3><a name="team"> The Team </a></h3>
-        <h6> Get to know us a little bit better! </h6>
-        <hr></hr>
-      </div> <!-- teamanimation -->
 
-        <div id="element-to-animate-person1" class="person animated">
-          <div class="face">
-            <img src="img/jagny.png">
-          </div>
-          <h3> Belmin Dervisevic </h3>
-          <hr>
-          <h4> Software Engineer </h4>
-            <div class="text-box">
-            <p> Vivamus quam dolor, luctus ut tortor vitae, volutpat mollis sem. Pellentesque condimentum massa ultrices, elementum ipsum in, tincidunt ligul.
-              Morbi sapien ipsum. </br> </br> Donec dignissim porta faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus et lorem sem. Nulla facilisi.  </p>
-            </div>
-            <div class="social-m">
-              <div class="media-wrapper">
-              <img  src="img/twitter.png"> <img src="img/facebook.png"> <img src="img/linkedin.png"> <img src="img/instagram.png">
-            </div>
-            </div>
-          </div>
+ </div> <!-- about_me -->
 
-        <div id="element-to-animate-person2" class="person animated">
-          <div class="face">
-            <img src="img/zlatanf.png">
-          </div>
-          <h3> Zlatan Ibrahimovic </h3>
-          <hr>
-          <h4> World Class Athlete </h4>
-            <div class="text-box"><p> Curabitur ac tincidunt ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam semper mauris et est lobortis porttitor. Pellentesque condimentum massa ultrices, elementum ipsum in, tincidunt ligul.
-              Morbi sapien ipsum. </br> </br> Kraciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-        </div>
-        <div class="social-m">
-          <div class="media-wrapper">
-          <img  src="img/twitter.png"> <img src="img/facebook.png"> <img src="img/linkedin.png"> <img src="img/instagram.png">
-        </div>
-        </div>
-      </div>
+ <div class="split animated fadeIn"></div>
 
-        <div id="element-to-animate-person3" class="person animated">
-          <div class="face">
-            <img src="img/bill.png">
-          </div>
-          <h3> Bill Gates </h3>
-          <hr>
-          <h4> Founder of Microsoft </h4>
-          <div class="text-box">
-            <p>Aenean in interdum est, eleifend varius orci. Maecenas pellentesque, urna ac convallis feugiat, libero turpis fermentum. Pellentesque condimentum massa ultrices, elementum ipsum in, tincidunt ligul.
-              Morbi sapien ipsum. </br> </br> Lorem ipsum allas darak vara. Class aptent taciti socikkas reptusas. Phasellus et lorem sem. Nulla facilisi.  </p>
-          </div>
-          <div class="social-m">
-            <div class="media-wrapper">
-            <img  src="img/twitter.png"> <img src="img/facebook.png"> <img src="img/linkedin.png"> <img src="img/instagram.png">
-          </div>
-          </div>
-        </div>
 
-      </div> <!-- team-wrapper -->
-    </div> <!-- team -->
+<h2 <a name="TP"> Tidigare projekt </a></h2>
+<div class="hsplit"></div>
+<h3> Kolla in mina tidigare arbeten!</h3>
 
-    <div class="split"></div>
-    <div id="element-to-animate4" class="contact animated">
-    <h3><a name="contact"> Contact </a></h3>
-    <h6> Don't hesitate to get in touch with us! </h6>
-    <hr></hr>
 
-    <div class="wrapperC">
-      <div class="form">
-        <label for="comments"> Your email will not be published. Mandatory fields are marked * </label>
-        <textarea name="message" id="message" cols="45" rows="14" placeholder="Message"></textarea> <br />
-        <input type="text" name="fnamn" id="name" placeholder="Name *"/> <br />
-        <input type="text" name="epost" id="email" placeholder="Email *" /> <br />
-        <input type="text" name="website" id="email" placeholder="Website " /> <br />
+<div id="element-to-animate-port1" class="portfolio animated">
+<div class="col-md-8">
+<h2> OS X Setups </h2>
+<h3> Utveckling // Design </h3>
+<p> En hemsida utvecklad och designad av mig för Instagram communityn "OS X Setups". Jag har använt mig av open source bibliotek som exempelvis animate.css och waypoints för diverse animeringar, Instagrams API för bildflödet och javascript för scrollanimationer. </p>
+<a target="_new" href="OSX/index.html"><button id="button">Besök</button></a>
+ </div>
+<div class="col-md-4">
+<img src="img/imac1.png"></div>
+</div> <!-- portfolio -->
 
-<p> <a class="buttonC" target="new" href="#"> Send </a>
-      </div> <!-- form -->
-    </div> <!-- WrapperC -->
-  </div> <!-- contact -->
 
-  <footer>
-    <div class="lockup">
-      <nav>
-        <ul>
-          <li> <a href="#about">ABOUT US</a></li>
-          <li> <a href="#platforms">PLATFORMS</a></li>
-          <li> <a href="#instagram">INSTAGRAM</a></li>
-          <li> <a href="#team">THE TEAM</a></li>
-          <li> <a href="#contact">CONTACT</a></li>
-        </ul>
-    </nav>
-    </div> <!--- Slut på lockup -->
-  <p class="copyright"> Made with &#10084; by <a href="http://www.github.com/belminD">Belmin Dervisevic</a> </br> Disclaimer: I do not own any of the images. </br> Website only for demo purposes </p>
-</footer>  <!-- footer -->
+
+<div id="element-to-animate-port2" class="portfolio animated">
+<div class="col-md-8">
+<h2> Välkomstsida med videobakgrund </h2>
+<h3> Utveckling // Design </h3>
+<p> Behöver du en schysst och enkel mall till en välkomstsida? Med hjälp av HTML5 så kan man snyggt och enkelt lägga in
+en video som backgrund. Den täcker hela sidan och fungerar perfekt som inloggingssida eller som startsida till ditt kommande projekt. Projektet är alldeles gratis och får användas precis hur som helst. </p>
+<a target="_new" href="VideoBackground/index.html"><button id="button">Besök</button></a>
+ </div>
+<div class="col-md-4">
+<img src="img/imacvid.png"></div>
+
+</div> <!-- portfolio -->
+
+
+</div> <!-- portfolio -->
+
+
+
+
+
+</div>  <!-- container -->
+<footer>
+  <div class="copyR"> © 2017 Belmin Dervisevic. Alla rättigheter reserverade. </div>
+</footer>
 
 </body>
 </html>
