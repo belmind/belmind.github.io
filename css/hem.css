@@ -208,7 +208,7 @@ h2{
 
 .hsplit{
 	width:315px;
-	height:2px;
+	height:0.1vw;
 	border:0;
 	background: #ffd401;
 	margin:12px auto 12px auto;
