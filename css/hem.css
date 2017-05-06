@@ -140,6 +140,7 @@ width:320px;
 	margin-right:auto;
 }
 .me_text p{
+	width:464px;
 	border-left: 2px solid black;
 	text-align: left;
 	font-size:15px;
