@@ -113,9 +113,9 @@ max-width:400px;
 }
 
 .me_pic{
-	width:40%;
+	width:37%;
 	float:left;
-	height: 100%;
+	margin-left:6%;
 }
 
 .me_pic img{
@@ -125,13 +125,10 @@ max-width:400px;
 .me_text{
 	float:right;
 	width:55%;
-	height:100%;
 	-webkit-animation-delay: 1.5s; /* Safari 4.0 - 8.0 */
   animation-delay: 1.5s;
 }
 .pic_pos{
-	width:250px;
-	margin-left: 3em;
 	-webkit-animation-delay: 1.5s; /* Safari 4.0 - 8.0 */
   animation-delay: 1.5s;
 }
@@ -149,7 +146,6 @@ max-width:400px;
 	text-align: left;
 	font-size:15px;
 	padding:0 3em 0em 2.5em;
-	margin-right: 7em;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	color:#6c6753;
@@ -273,7 +269,9 @@ h3{
 
 .left-port p{
 	padding-bottom: 15px;
-
+	font-family: 'Raleway', sans-serif;
+	font-size:16px;
+	line-height: 1.5em;
 }
 
 .left-port h3{
