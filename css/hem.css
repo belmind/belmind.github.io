@@ -195,6 +195,7 @@ h2{
 	text-decoration-color: #ffd401;
 	font-weight:700;
 	margin-top:50px;
+	margin-bottom:0;
 	-webkit-animation-delay: 2.5s; /* Safari 4.0 - 8.0 */
   animation-delay: 2.5s;
 
@@ -266,6 +267,7 @@ h3{
 	margin-top:10px;
 	font-size:26px;
 	text-align: left;
+	margin-bottom:5px;
 
 }
 
@@ -277,7 +279,7 @@ h3{
 .left-port h3{
 	text-align: left;
 	font-weight: 700;
-	padding-bottom:20px;
+	padding-bottom:10px;
 	font-family: 'Open Sans', sans-serif;
 	text-transform: lowercase;
 
