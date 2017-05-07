@@ -113,13 +113,13 @@ max-width:400px;
 }
 
 .me_pic{
-	width:37%;
+	width:39%;
 	float:left;
-	margin-left:6%;
+	margin-left: 2em;
 }
 
 .me_pic img{
-	width:320px;
+	width:100%;
 }
 
 .me_text{
