@@ -144,7 +144,7 @@ max-width:400px;
 	width:400px;
 	border-left: 2px solid black;
 	text-align: left;
-	font-size:15px;
+	font-size:16px;
 	padding:0 3em 0em 2.5em;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
@@ -235,9 +235,9 @@ h3{
 
 
  .portfolio{
-	 width:80%;
+	 width:95%;
 	 height:300px;
-	 margin-left: 16%;
+	 margin-left: 12%;
 
  }
 
@@ -284,12 +284,12 @@ h3{
 }
 .right-port{
 	width:33.3333%;
-	float:left;
+	float:right;
 }
 .right-port img{
-	width:80%;
+	width:320px;
 	position: relative;
-	top:-2.2em;
+	top:-3em;
 }
 
 button{
