@@ -14,7 +14,7 @@ body{
   background:#ffd401; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background:#ffd401; Gecko Browsers */
+  background:#ffd401; /* Gecko Browsers */
 }
 
 .container{
