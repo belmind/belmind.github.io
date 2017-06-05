@@ -191,14 +191,14 @@ ul.todo#completed li .buttons button.complete svg{
   background:#46db37;
   border:0px
 }
-
+/* problem på iphone
 ul.todo:not(#completed) li .buttons button.complete:hover svg{
   background:rgba(70, 219, 55, 0.75);
 }
 
 ul.todo:not(#completed) li .buttons button.complete:hover svg .fill{
   fill:#fff;
-}
+} */
 
 ul.todo#completed li .buttons button.complete svg .fill{
   fill:#fff;
