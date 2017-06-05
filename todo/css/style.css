@@ -5,31 +5,58 @@ body, input, button{
 
 body{
   background-color: #edf0f1;
-  padding-top:80px;
+  padding-top:250px;
 }
 
 header{
   width:100%;
-  height:80px;
+  height:250px;
   position:fixed;
   font-weight:400;
   top:0;
   left:0;
   z-index:5;
   padding:15px;
-  background-color: #00baff;
-  box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  /* background-color: #00baff; */
+   box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+
+}
+
+.background-image{
+  position:absolute;
+  top:0;
+  left: 0;
+  overflow:auto;
+  z-index: -1;
+
+
+  background-image: url("../img/31.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 250px;
+
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 header input {
   width:100%;
-  height:50px;
+  height:40px;
   color:#fff;
-  font-size:15px;
+  font-size:14px;
   text-indent: 18px;
   padding:0 60px 0 0;
   float:left;background: rgba(255, 255, 255, 0.2);
+  position: relative;
+  top:180px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border-top-right-radius: 25px;
@@ -57,12 +84,30 @@ header input:-ms-input-placeholder{
   color:rgba(255, 255, 255, 0.75);
 }
 
+header h2{
+  color:#fff;
+  position: absolute;
+  font-size: 30px;
+  font-weight: 700;
+  top:118px;
+  left:20px;
+}
+
+
+header h3{
+  color:#fff;
+  position: absolute;
+  font-size: 18px;
+  font-weight: 300;
+  top:155px;
+  left:20px;
+}
 
 header button{
-  width:50px;
-  height:50px;
+  width:40px;
+  height:40px;
   position: absolute;
-  top:15px;
+  top:195px;
   right:15px;
   z-index: 2;
   border-radius: 25px;
@@ -80,17 +125,18 @@ header button{
 }
 
 header button svg{
-  width:16px;
-  height:16px;
+  width:12px;
+  height:12px;
   position: absolute;
   top:50%;
   left:50%;
-  margin:-8px 0 0 -8px;
+  margin:-6px 0 0 -6px;
 }
 
 header button svg .fill{
-  fill: #00baff;
+    fill: #131313;
 }
+
 
 .container{
   width:100%;
