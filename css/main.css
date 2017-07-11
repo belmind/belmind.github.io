@@ -7,7 +7,6 @@ body{
 	background-color:#fefefe;
 	font-family: 'Roboto', sans-serif;
 	-moz-osx-font-smoothing: grayscale;
-
 }
 
 ::selection {
@@ -27,7 +26,7 @@ body{
 .language{
 	width:100px;
 	margin-left: auto;
-	margin-top:5px;
+	margin-top:8px;
 	float:right;
 	-webkit-animation-delay: 2.5s; /* Safari 4.0 - 8.0 */
   animation-delay: 2.5s;
@@ -49,9 +48,9 @@ body{
 
 .language p {
 	float:left;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 15px;
 	margin-top:22px;
 	cursor: pointer;
 }
@@ -70,8 +69,8 @@ body{
 }
 
 .social_container svg{
-	width:28px;
-	height:28px;
+	width:44px;
+	height:44px;
 	padding:8px;
 	cursor: pointer;
 }
@@ -92,6 +91,7 @@ header{
 	width:100%;
 	height: 160px;
 	padding-top:3em;
+	margin-bottom:3em;
 }
 header img{
 max-width:400px;
@@ -106,24 +106,25 @@ max-width:400px;
 }
 
 .about_me{
-	width:66%;
+	width:80%;
 	height:500px;
 	margin-left:auto;
 	margin-right:auto;
 }
 
 .me_pic{
-	width:39%;
+	width:45%;
 	float:left;
-	margin-left: 2em;
 }
 
 .me_pic img{
-	width:100%;
+	max-width: 350px;
+	width:85%;
+	float:right;
 }
 
 .me_text{
-	float:right;
+	float:left;
 	width:55%;
 	-webkit-animation-delay: 1.5s; /* Safari 4.0 - 8.0 */
   animation-delay: 1.5s;
@@ -134,21 +135,23 @@ max-width:400px;
 }
 
 .text_pos{
-	width:80%;
+	width:60%;
+	float:left;
 	margin-left:auto;
 	margin-right:auto;
 	position: relative;
-	top:-1em;
+	padding: 0 9em 0 4em;
 }
 .me_text p{
-	width:400px;
+	width:500px;
 	border-left: 2px solid black;
 	text-align: left;
 	font-size:16px;
 	padding:0 3em 0em 2.5em;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
-	color:#6c6753;
+	color:black;
+	opacity: 0.9;
 	position: relative;
 	line-height: 1.5em;
 }
@@ -171,6 +174,7 @@ max-width:400px;
 	margin-right: auto;
 	position: relative;
 	left:-0.8em;
+	width:340px;
 }
 
  .text_lower svg{
@@ -224,15 +228,17 @@ h3{
 	font-weight: 300;
 	text-align: center;
 	font-size: 16px;
-	padding-bottom:50px;
+
 	letter-spacing: 0.05em;
 	color:#999;
 	margin:0;
 	-webkit-animation-delay: 2.5s; /* Safari 4.0 - 8.0 */
   animation-delay: 2.5s;
-
 }
 
+.tidigare{
+	margin-bottom:3em;
+}
 
  .portfolio{
 	 width:95%;
@@ -254,9 +260,9 @@ h3{
 
 
 .left-port{
-
 	width:66.6666%;
 	float:left;
+	padding-top:2em;
 }
 
 .left-port h2{
@@ -283,8 +289,8 @@ h3{
 
 }
 .right-port{
-	width:33.3333%;
-	float:right;
+	width:20%;
+	float:left;
 }
 .right-port img{
 	width:320px;
@@ -292,8 +298,15 @@ h3{
 	top:-3em;
 }
 
+.iph{
+	max-width:280px;
+	margin-left:15px;
+	margin-top:2em;
+}
+
 button{
   outline:none;
+	font-size: 14px;
   height: 40px;
   text-align: center;
   width: 130px;

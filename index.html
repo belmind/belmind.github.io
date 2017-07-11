@@ -4,66 +4,20 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Muli:300|Raleway:300,700' rel='stylesheet' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<link rel="shortcut icon" href="img/icon1.png">
-<link href="css/hem.css" rel="stylesheet" type="text/css">
+<link href="css/reset.min.css" rel="stylesheet"> <!-- CSS RESET -->
+<link href="css/main.css" rel="stylesheet" type="text/css">
 <link href="css/animate.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="animate.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <title> dervisevic | Göteborg, Sverige  </title>
 <meta charset="utf-8">
 <script src="js/noframework.waypoints.min.js"></script>
-<script src="js/waypoints"></script>
+<script src="js/waypoint.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
-<script type="text/javascript" src="js/instafeed.min.js"></script>
+
 
 </head>
 <body>
-  <!-- Scrolling animation # -->
-  <script type ="text/javascript">
-  $(function() {
-    $('a[href*="#"]:not([href="#"])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 1300);
-          return false;
-        }
-      }
-    });
-  });
-  </script>
 
 
-  <!-- Scroll animations -->
-<script>
-$(document).ready(function(){
-
-  // hide our element on page load
-  $('#element-to-animate-port1').css('opacity', 0);
-
-  $('#element-to-animate-port1').waypoint(function() {
-      $('#element-to-animate-port1').addClass('fadeInUp');
-  }, { offset: '80%' });
-
-  // hide our element on page load
-  $('#element-to-animate-port2').css('opacity', 0);
-
-  $('#element-to-animate-port2').waypoint(function() {
-      $('#element-to-animate-port2').addClass('fadeInUp');
-  }, { offset: '80%' });
-
-  // hide our element on page load
-  $('#element-to-animate-port3').css('opacity', 0);
-
-  $('#element-to-animate-port3').waypoint(function() {
-      $('#element-to-animate-port3').addClass('fadeInUp');
-  }, { offset: '80%' });
-
-});
-</script>
 
 
 
@@ -185,16 +139,15 @@ $(document).ready(function(){
 
   <div class="about_me">
   <div class="me_pic">
+
     <div class="pic_pos animated fadeIn">
   <img src="img/me3.jpeg">
   </div> </div>
   <div class="me_text animated fadeIn">
     <div class="text_pos">
-  <p> Hej! Jag heter Belmin, är 20 år gammal och kommer ifrån Sollefteå, Norrland. Idag är jag bosatt i Göteborg och studerar Datateknik, Civilingenjör vid Chalmers tekniska högskola. <br>
-      När jag inte tränar, pluggar eller umgås med familj och vänner så brukar jag designa samt utveckla hemsidor och mobila plattformer. Jag anser att bra design är estetisk, tydlig och diskret. <br>
-      Denna sida är långt ifrån klar och kommer nog aldrig bli det heller, men den får duga tillsvidare.<br>
-      Tveka inte att kontaka mig ifall du skulle vilja diskutera idéer eller ifall du bara vill säga hej! <br>
-      (18/05-17, layouten och linjeringen ser olika ut på varenda enhet... Jag jobbar på det!)
+  <p> Hej! Jag heter Belmin, är 20 år gammal och kommer ifrån Sollefteå, Norrland. Idag är jag bosatt i Göteborg och studerar mitt andra år på programmet Civilingenjör, Datateknik vid Chalmers tekniska högskola. <br>
+      När jag inte tränar, pluggar eller umgås med familj och vänner brukar jag designa samt utveckla hemsidor och mobila plattformer. Jag anser att bra design är ärlig, tydlig och diskret. <br>
+      Tveka inte att kontaka mig ifall du skulle vilja jobba tillsammans! <br>
       <div class="text_lower">
       <a href="#TP">
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
@@ -210,46 +163,101 @@ $(document).ready(function(){
 
 <h2 class="animated fadeIn" <a name="TP"> Tidigare projekt </a></h2>
 <div class="hsplit animated fadeIn"></div>
-<h3 class="animated fadeIn"> Kolla in mina tidigare arbeten!</h3>
+<h3 class=" tidigare animated fadeIn"> Kolla in mina tidigare arbeten!</h3>
+
 
 
 <div id="element-to-animate-port1" class="portfolio animated">
 <div class="left-port">
 <h2> OS X Setups </h2>
 <h3> Utveckling // Design </h3>
-<p> En hemsida utvecklad och designad av mig för Instagram communityn "OS X Setups". Jag har använt mig av open source bibliotek som exempelvis animate.css och waypoints för diverse animeringar, Instagrams API för bildflödet och javascript för scrollanimationer. </p>
+<p> En hemsida utvecklad och designad av mig för Instagram kontot "OS X Setups". Jag har använt mig av open source bibliotek som exempelvis animate.css och waypoints för diverse animeringar, Instagrams API för bildflödet och javascript för scrollanimationer. </p>
 <a target="_new" href="OSX/index.html"><button id="button">Besök</button></a>
- </div>
+</div>
 <div class="right-port">
 <img src="img/imac1.png"></div>
-</div> <!-- portfolio -->
-
-
+</div>
 
 <div id="element-to-animate-port2" class="portfolio animated">
 <div class="left-port">
 <h2> Inloggningssida </h2>
 <h3> Utveckling // Design </h3>
-<p> En simpel men snygg inloggningssida med rörlig bakgrund, sidan är skriven i html och css. Videobakgruden är implementerad med hjälp av HTML5 taggen 'video' och
-sedan justerad i css.   </p>
+<p> En simpel inloggningssida med rörlig bakgrund, sidan är skriven i endast html och css. Videobakgrunden är implementerad med hjälp av HTML5 taggen 'video' och
+sedan justerad i css. Observera att ingen backend finns tillgänglig, utan det är endast frontend. Sidan var mest ett test av videobackgrunden. </p>
 <a target="_new" href="login/index.html"><button id="button">Besök</button></a>
- </div>
+</div>
 <div class="right-port">
-<img src="img/imaclogin.png"></div>
+<img src="img/imaclogin.png"></img></div>
+</div>
 
-</div> <!-- portfolio -->
-
-
-</div> <!-- portfolio -->
-
-
-
-
+<div id="element-to-animate-port3" class="portfolio animated">
+<div class="left-port">
+<h2> Att-göra-lista </h2>
+<h3> Utveckling // Design // funktionalitet </h3>
+<p> En att-göra-lista som hjälper användaren att hålla reda på saker. Backenden är skriven i vanilla javascript och objekten sparas lokalt på enheten så att
+allting finns kvar när man öppnar sidan/"appen" igen. </p>
+<a target="_new" href="todo/index.html"><button id="button">Besök</button></a>
+</div>
+<div class="right-port">
+<img class="iph" src="img/todo-tilt.png"></img></div>
+</div>
 
 </div>  <!-- container -->
+
 <footer>
   <div class="copyR"> © 2017 Belmin Dervisevic. Alla rättigheter reserverade. </div>
 </footer>
 
+
+
+<!---------------------------- SCRIPTS ---------------------------->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+      <script src="js/main.js"></script>
+
+      <!-- Scrolling animation # -->
+      <script type ="text/javascript">
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1300);
+              return false;
+            }
+          }
+        });
+      });
+      </script>
+
+      <!-- Fade in animations -->
+    <script>
+    $(document).ready(function(){
+
+      // hide our element on page load
+      $('#element-to-animate-port1').css('opacity', 0);
+
+      $('#element-to-animate-port1').waypoint(function() {
+          $('#element-to-animate-port1').addClass('fadeInUp');
+      }, { offset: '80%' });
+
+      // hide our element on page load
+      $('#element-to-animate-port2').css('opacity', 0);
+
+      $('#element-to-animate-port2').waypoint(function() {
+          $('#element-to-animate-port2').addClass('fadeInUp');
+      }, { offset: '80%' });
+
+      // hide our element on page load
+      $('#element-to-animate-port3').css('opacity', 0);
+
+      $('#element-to-animate-port3').waypoint(function() {
+          $('#element-to-animate-port3').addClass('fadeInUp');
+      }, { offset: '80%' });
+
+    });
+    </script>
 </body>
 </html>
