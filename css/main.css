@@ -174,7 +174,7 @@ max-width:400px;
 	margin-right: auto;
 	position: relative;
 	left:-0.8em;
-	width:340px;
+	min-width:640px;
 }
 
  .text_lower svg{
