@@ -1,261 +1,71 @@
-body {
-  width: 100%;
-  align-items: center;
-  line-height: 1.25;
-  font-family: 'Hind', sans-serif;
-  display: flex;
-  flex-direction: column;
+:root {
+  --dark-background: #2c2c2c;
+  --font-color: #ffffff;
 }
 
-body, p {
+body {
+  width: 100%;
+  line-height: 1.25;
+  font-family: "Roboto", sans-serif;
+  background: var(--dark-background);
+}
+
+body,
+p {
   margin: 0;
   padding: 0;
 }
 
-.wrapper {
-  margin: 3em auto;
-  max-width: 960px;
+a {
+  color: var(--dark-background);
 }
 
-.wrapper, .main-intro, .twitter, footer {
-  padding: 0 1em;
-}
-
-.main_intro{
-  float:left;
-}
-
-.main-intro h1 {
-  font-weight: 300;
+h1 {
+  font-weight: 900;
   font-size: 1.5em;
-  color: slategray;
+  color: var(--font-color);
 }
 
-.social_container{
-  float:right;
-   width:250px;
-   margin-top:-4.4em;
+h2 {
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--font-color);
 }
 
-.social_container a{
-  color:white;
-}
-
-.social_container svg{
-  fill:slategray;
-  width:30px;
-  height:30px;
-  padding:8px 6px;
+svg {
+  fill: var(--font-color);
+  width: 30px;
+  height: 30px;
+  padding: 8px;
   cursor: pointer;
-}
-
-.social_container a svg{
   position: relative;
-  top:0;
-  transition: -webkit-transform .15s ease-in-out;
-  transition: top .15s ease-in-out;
-  transition: top .15s ease-in-out,-webkit-transform .15s ease-in-out;
+  top: 0;
+  transition: -webkit-transform 0.15s ease-in-out;
+  transition: top 0.15s ease-in-out;
+  transition: top 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
 }
 
 svg:hover {
-  fill: black;
+  top: -5px;
 }
 
-#git svg:hover {
-  fill: black;
-  top:-5px;
+#cobaltpe {
+  color: var(--font-color);
 }
 
-#mail svg:hover {
-  fill:#c2c2c2;
-  top:-5px;
+.wrapper {
+  padding-top: 148px;
+  margin: 3em auto;
+  max-width: 640px;
+  width: 640px;
 }
 
-#insta svg:hover {
-  fill: #8a3ab9;
-  top:-5px;
+.text_wrapper {
+  margin-top: 20px;
 }
 
- #fb svg:hover {
-  fill: #3b5998;
-  top:-5px;
-}
-
-#linkedin svg:hover {
-  fill: #0077B5;
-  top:-5px;
-}
-
-footer svg{
-  position: relative;
-  top:3px;
-  left:1px;
-  width:30px;
-  height:16px;
-}
-
-.projects {
-  float:left;
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-}
-
-.project {
-  height: 160px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex: 1 300px;
-  padding: 2em;
-  margin: 1.2em;
-  border-radius: .5em;
-  transition: transform .5s;
-}
-
-.project svg {
-  width: 4em;
-  fill: white;
-  margin-bottom: 1.2em;
-  max-height: 3em;
-}
-
-.project p {
-  font-size: 1em;
-  font-weight: 500;
-  backface-visibility: hidden;
-}
-
-.project a {
-  text-decoration: none;
-  color: white;
-  display: block;
-}
-
-.cetac img{
-  width:60px;
-  padding-bottom:0.5em;
-}
-
-.hackathon img {
-    width:60px;
-    padding-bottom:1em;
-}
-
-.bsc img {
-    width:30px;
-    padding-bottom:1em;
-}
-
-.cetac {
-  background: #C04848;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.bsc{
-  background: #F7971E;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.blog{
-  background: #FFAFBD;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-.bobby {
-  background: #00c6ff;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.bobby p{
-  margin-top:-1.2em;
-}
-
-.bobby svg{
-  max-height:10em;
-  width: 6em;
-}
-
-.osx {
-  background: #283048;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- }
-
- .hackathon {
-   background: #23CF5F;
- }
-
-footer {
-  margin-top: 2em;
-  color: slategray;
-  float:left;
-}
-
-
-footer a {
-  color: black;
-}
-
-
-.love {
-  color: red;
-  margin: 0 .25em;
-}
-
-
-@media (max-width: 960px) {
-  .social_container{
-    width:200px;
-    margin-top:-3em;
-  }
-
-  .social_container svg{
-    fill:slategray;
-    width:26px;
-    height:26px;
-    padding-top:20px;
-    padding:4px;
-  }
-}
-
-@media (min-width: 960px) {
-  .main-intro h1 {
-    font-size: 2em;
-  }
-  .project {
-    flex: 1 150px;
-  }
-  .project:hover {
-    transform: scale(1.1);
-  }
-}
-
-@media (min-device-width: 768px) {
-  .project {
-    flex: 1 200px;
-  }
-}
-
-@media (max-width: 450px) {
-  .social_container{
-    padding:10px 0 10px 0;
-    width:155px;
-    margin-top:-1em;
-  }
-}
-
-@media (max-width: 570px) {
-  .social_container{
-    padding:10px 0 10px 0;
-    width:200px;
-    margin-top:-1em;
-  }
+.social_container {
+  float: right;
+  width: 146px;
+  margin-top: -3em;
 }
