@@ -5,6 +5,7 @@
 
 body {
   width: 100%;
+  height: 100vh;
   line-height: 1.25;
   font-family: "Roboto", sans-serif;
   background: var(--dark-background);
@@ -17,19 +18,22 @@ p {
 }
 
 a {
-  color: var(--dark-background);
+  color: rgba(0, 0, 0, 0);
 }
 
 h1 {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 1.5em;
   color: var(--font-color);
+  letter-spacing: 0.4px;
 }
 
 h2 {
   font-weight: 400;
   font-size: 22px;
   color: var(--font-color);
+  line-height: 32px;
+  letter-spacing: 0.2px;
 }
 
 svg {
@@ -40,8 +44,6 @@ svg {
   cursor: pointer;
   position: relative;
   top: 0;
-  transition: -webkit-transform 0.15s ease-in-out;
-  transition: top 0.15s ease-in-out;
   transition: top 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
 }
 
@@ -54,18 +56,114 @@ svg:hover {
 }
 
 .wrapper {
-  padding-top: 148px;
-  margin: 3em auto;
+  padding-top: 216px;
+  margin: 0 auto;
   max-width: 640px;
   width: 640px;
 }
 
 .text_wrapper {
   margin-top: 20px;
+  width: 90%;
 }
 
 .social_container {
   float: right;
   width: 146px;
   margin-top: -3em;
+}
+
+@media screen and (max-width: 680px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .wrapper {
+    width: 500px;
+  }
+
+  .text_wrapper {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+  }
+
+  .wrapper {
+    width: 400px;
+  }
+
+  .social_container {
+    width: 128px;
+  }
+
+  .text_wrapper {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+  }
+
+  .wrapper {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 0.7em;
+    line-height: 24px;
+  }
+
+  svg {
+    width: 22px;
+    height: 22px;
+    padding: 8px;
+  }
+
+  .wrapper {
+    padding-top: 168px;
+    width: 280px;
+  }
+
+  .social_container {
+    width: 122px;
+  }
 }
