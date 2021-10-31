@@ -65,6 +65,7 @@ svg:hover {
 .text_wrapper {
   margin-top: 20px;
   width: 90%;
+  animation-delay: 0.5s;
 }
 
 .social_container {
